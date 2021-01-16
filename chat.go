@@ -429,12 +429,26 @@ func MsgOptionUnfurl(timestamp string, unfurls map[string]Attachment) MsgOption 
 	}
 }
 
-// MsgOptionUnfurlAuthURL unfurls a message using an auth url based on the timestamp.
+// MsgOptionUnfurlUserAuthRequired sets the unfurl user_auth_required parameter to true
+func MsgOptionUnfurlUserAuthRequired() MsgOption {
+	return func(config *sendConfig) error {
+		config.values.Set("user_auth_required", "true")
+		return nil
+	}
+}
+
+// MsgOptionUnfurlAuthURL sets the unfurl user_auth_url parameter
 func MsgOptionUnfurlAuthURL(timestamp string, userAuthURL string) MsgOption {
 	return func(config *sendConfig) error {
-		config.endpoint = config.apiurl + string(chatUnfurl)
-		config.values.Add("ts", timestamp)
-		config.values.Add("user_auth_url", userAuthURL)
+		config.values.Set("user_auth_url", userAuthURL)
+		return nil
+	}
+}
+
+// MsgOptionUnfurlUserAuthMessage sets the unfurl user_auth_message paramater
+func MsgOptionUnfurlUserAuthMessage(message string) MsgOption {
+	return func(config *sendConfig) error {
+		config.values.Set("user_auth_message", message)
 		return nil
 	}
 }
