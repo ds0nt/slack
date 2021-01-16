@@ -1,4 +1,4 @@
-Slack API in Go [![GoDoc](https://godoc.org/github.com/slack-go/slack?status.svg)](https://godoc.org/github.com/slack-go/slack) [![Build Status](https://travis-ci.org/slack-go/slack.svg)](https://travis-ci.org/slack-go/slack)
+Slack API in Go [![GoDoc](https://godoc.org/github.com/ds0nt/slack?status.svg)](https://godoc.org/github.com/ds0nt/slack) [![Build Status](https://travis-ci.org/ds0nt/slack.svg)](https://travis-ci.org/ds0nt/slack)
 ===============
 This is the original Slack library for Go created by Norberto Lopez, transferred to a Github organization.
 
@@ -14,13 +14,13 @@ a fully managed way.
 There is currently no major version released.
 Therefore, minor version releases may include backward incompatible changes.
 
-See [CHANGELOG.md](https://github.com/slack-go/slack/blob/master/CHANGELOG.md) for more information about the changes.
+See [CHANGELOG.md](https://github.com/ds0nt/slack/blob/master/CHANGELOG.md) for more information about the changes.
 
 ## Installing
 
 ### *go get*
 
-    $ go get -u github.com/slack-go/slack
+    $ go get -u github.com/ds0nt/slack
 
 ## Example
 
@@ -30,7 +30,7 @@ See [CHANGELOG.md](https://github.com/slack-go/slack/blob/master/CHANGELOG.md) f
 import (
 	"fmt"
 
-	"github.com/slack-go/slack"
+	"github.com/ds0nt/slack"
 )
 
 func main() {
@@ -55,7 +55,7 @@ func main() {
 import (
     "fmt"
 
-    "github.com/slack-go/slack"
+    "github.com/ds0nt/slack"
 )
 
 func main() {
@@ -71,12 +71,12 @@ func main() {
 
 ## Minimal RTM usage:
 
-See https://github.com/slack-go/slack/blob/master/examples/websocket/websocket.go
+See https://github.com/ds0nt/slack/blob/master/examples/websocket/websocket.go
 
 
 ## Minimal EventsAPI usage:
 
-See https://github.com/slack-go/slack/blob/master/examples/eventsapi/events.go
+See https://github.com/ds0nt/slack/blob/master/examples/eventsapi/events.go
 
 
 ## Contributing

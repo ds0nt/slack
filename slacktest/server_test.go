@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/slack-go/slack"
+	"github.com/ds0nt/slack"
 	"github.com/stretchr/testify/assert"
 )
 

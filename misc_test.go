@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/slack-go/slack/slackutilsx"
+	"github.com/ds0nt/slack/slackutilsx"
 )
 
 var (
